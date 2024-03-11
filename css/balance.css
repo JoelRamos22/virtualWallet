@@ -13,7 +13,7 @@ body{
 .banner img {
     width: 100%;
     position: absolute;
-    height: 30vh;
+    height: 29vh;
     z-index: -1;
     object-fit: cover;
 }
@@ -31,9 +31,10 @@ body{
     justify-content: center;
     flex-direction: column;
     border-radius: 50%;
-    width: 210px;
-    height: 210px;
+    width: 190px;
+    height: 190px;
     line-height: 40px;
+    margin-top: 25px;
     padding: 50px 0px;
     text-transform: capitalize;
     font-weight: 600;
@@ -48,6 +49,13 @@ body{
 
 }
 .circle__text2 {
+    font-family: "SF-Pro-Text-Bold";
+    display: flex;
+    flex-direction: row;
+    font-size: 1.8em;
+    color: var(--color-ternario);
+}
+.circle__text3 {
     font-family: "SF-Pro-Text-Bold";
     display: flex;
     flex-direction: row;
@@ -116,7 +124,7 @@ body{
 }
 .graphics {
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     padding: 0px 20px;
     display: flex;
     flex-direction: column;
@@ -137,7 +145,6 @@ body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-top: -10%;
     padding: 0px 20px;
 }
 .image__imagen1 {
@@ -147,7 +154,58 @@ body{
 
 .days__imagen1 {
     height: 125px;
-    width: 400px;
+    width: 380px;
+}
+.card {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    gap:   10px;
+    flex-direction: row;
+    align-items: center;
+    background: #E1FFEF;
+    justify-content: space-between;
+}
+
+.card__image {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+}
+.card__text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 5px;
+    padding: 0px 25px;
+}
+.image__credit {
+    height: 135px;
+    width: 135px;
+}
+.text__title{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: "SF-Pro-Text-Bold";
+    font-size: 1.3em;
+    color: var(--color-primario)
+}
+.text__text {
+    font-family: "SF-Pro-Text-Regular";
+    color: var(--color-cuarto);
+    font-weight: 700;
+}
+.close-icon {
+    position: absolute;
+    top: 650px;
+    right: 12px;
+    font-size: 2.5em;
+    color: var(--color-primario);
 }
 .header {
     width: 100%;
@@ -157,6 +215,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    overflow-y: scroll;
     position: sticky;
     z-index: 2;
     top: 0;
@@ -170,11 +229,6 @@ body{
     gap: 5px;
 
 }
-
-.logo__icono {
-    /* background: green; */
-}
-
 .logo__icono img {
     width: 3em;
 }
