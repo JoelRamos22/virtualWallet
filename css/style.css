@@ -7,22 +7,22 @@
     font-family: "SF-Pro-Text-Regular";
 }
 body{
-    background: var(--color-primario);
+    background: var(--color-primario-binance);
 }
 .banner{
     position: absolute;
     z-index: -1;
 }
 .banner img{
+    margin-top: -10%;
+    filter: blur(7px);
     width: 100%;
-    height: 105vh;
-    object-fit: cover;
+    height: 60vh;
+    object-fit:cover;
 }
 .header {
     width: 100%;
     padding: 0 .5em;
-    /* height: 60px; */
-    /* background: darkgoldenrod; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,7 +31,7 @@ body{
     position: sticky;
     z-index: 2;
     top: 0;
-    background: var(--color-primario);
+    background: linear-gradient(to bottom right, var(--color-secundario-binance),var(--color-primario-binance));
 }
 
 .header__logo {
@@ -41,35 +41,23 @@ body{
     gap: 5px;
 
 }
-
-.logo__icono {
-    /* background: green; */
-}
-
 .logo__icono img {
-    width: 3em;
+    width: 2.3em;
 }
 
 .logo__titulo {
     /* background: orange; */
-    color: var(--color-ternario);
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--color-secundario-binance);
     font-family: "SF-Pro-Text-Bold";
     text-transform: uppercase;
 }
 
-.header__menu {
-    /* background: darkblue; */
-}
-
-.header__menu i {
+.header__menu img {
     font-size: 3em;
-    color: var(--color-ternario);
+    color: var(--color-secundario-binance);
 }
-
-.main__titulo {
-    /* background: red; */
-}
-
 .titulo__card {
     /* background: green; */
     display: flex;
@@ -97,7 +85,7 @@ body{
 
 .titulo__balance {
     /* background: fuchsia; */
-    color: var(--color-ternario);
+    color: var(--color-secundario-binance);
     display: flex;
     height: 130px;
     justify-content: space-between;
@@ -125,14 +113,14 @@ body{
 }
 
 .balance__one progress[value] {
-    --color: var(--color-secundario);
-    --background: var(--color-ternario);
+    --color: var(--color-secundario-binance);
+    --background: var(--color-cuarto);
     background: var(--background);
 }
 
 .balance__two progress[value] {
-    --color: var(--color-cuarto);
-    --background: var(--color-ternario);
+    --color: var(--color-secundario-binance);
+    --background: var(--color-cuarto);
     background: var(--background);
 }
 
@@ -164,7 +152,7 @@ progress[value]::-moz-progress-bar {
 }
 
 .main__activities{
-    background: var(--color-ternario);
+    background: linear-gradient(to bottom right, var(--color-secundario-binance),var(--color-primario-binance));
     height: 100vh;
     padding: 1.5em 0.5em;
     border-top-left-radius: 20px;
@@ -175,12 +163,10 @@ progress[value]::-moz-progress-bar {
     flex-direction: column;
     gap: .5em;
 }
-.activities__service{
-    /* background: blue; */
-}
+
 .activities__service h3,
 .activities__transactions h3{
-    /* background: darkgoldenrod; */
+    color: var(--color-primario-binance);
     text-transform: capitalize;
     font-family: "SF-Pro-Text-Bold";
     font-size: 1.3em;
@@ -193,6 +179,7 @@ progress[value]::-moz-progress-bar {
     flex-direction: row;
     justify-content: center;
     overflow-x: scroll;
+
     padding: 0.8em;
     gap: 15px;
 }
@@ -201,9 +188,9 @@ progress[value]::-moz-progress-bar {
     min-width: 30%;
     min-height: 150px;
     border-radius: 20px;
-    background: var(--color-ternario);
+    background: var(--color-primario-binance);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.150);
-    color: var(--color-primario);
+    color: var(--color-secundario-binance);
     font-family: "SF-Pro-Text-Semibold";
     text-transform: capitalize;
     display: flex;
@@ -215,15 +202,6 @@ progress[value]::-moz-progress-bar {
 .service__cards div i{
     font-size: 2.3em;
 }
-.service__cards__item_1, 
-.service__cards__item_2, 
-.service__cards__item_3{
-    /* background: darkmagenta; */
-}
-
-
-
-
 
 .activities__transactions{
     /* background: red; */
@@ -279,7 +257,7 @@ i.bxs-down-arrow{
 
 .footer {
     width: 100%;
-    background: var(--color-primario);
+    background: linear-gradient(to bottom right, var(--color-secundario-binance),var(--color-primario-binance));
     position: fixed;
     bottom: 0;
     z-index: 10;
