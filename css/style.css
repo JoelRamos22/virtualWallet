@@ -31,7 +31,7 @@ body{
     position: sticky;
     z-index: 2;
     top: 0;
-    background: linear-gradient(to bottom right, var(--color-secundario-binance),var(--color-primario-binance));
+    background:var(--color-primario-binance);
 }
 
 .header__logo {
@@ -152,7 +152,7 @@ progress[value]::-moz-progress-bar {
 }
 
 .main__activities{
-    background: linear-gradient(to bottom right, var(--color-secundario-binance),var(--color-primario-binance));
+    background: var(--color-secundario-binance);
     height: 100vh;
     padding: 1.5em 0.5em;
     border-top-left-radius: 20px;
@@ -203,10 +203,6 @@ progress[value]::-moz-progress-bar {
     font-size: 2.3em;
 }
 
-.activities__transactions{
-    /* background: red; */
-}
-
 .transactions__cards{
     /* background: orangered; */
     height: 460px;
@@ -225,7 +221,7 @@ progress[value]::-moz-progress-bar {
     gap: 10px;
 }
 .transactions__cards div i {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 div.transactions__description,
 div.transactions__value{
@@ -243,10 +239,15 @@ div.transactions__description p,
 div.transactions__value p{
     font-family: "SF-Pro-Text-Bold";
 }
-div.transactions__description small,
+div.transactions__description small
+{
+    font-family: "SF-Pro-Text-Light";
+    color: var(--color-primario-binance);
+}
+
 div.transactions__value small{
     font-family: "SF-Pro-Text-Light";
-    color: var(--color-cuarto);
+    color: #026f0a;
 }
 i.bx.bxs-up-arrow{
     color: var(--color-secundario);
@@ -257,7 +258,7 @@ i.bxs-down-arrow{
 
 .footer {
     width: 100%;
-    background: linear-gradient(to bottom right, var(--color-secundario-binance),var(--color-primario-binance));
+    background: var(--color-primario-binance);
     position: fixed;
     bottom: 0;
     z-index: 10;
@@ -274,5 +275,5 @@ i.bxs-down-arrow{
 }
 
 .footer ul li a img {
-    width: 2em;
+    width: 2.5em;
 }
