@@ -10,12 +10,18 @@ body{
     width: 100%;
     height: 100vh;
 }
+
 .banner img {
     width: 100%;
     position: absolute;
-    height: 29vh;
+    /* background: var(--color-primario-binance); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
     z-index: -1;
     object-fit: cover;
+    filter: blur(2px);
 }
 .balance {
     width: 100%;
@@ -39,13 +45,13 @@ body{
     text-transform: capitalize;
     font-weight: 600;
     z-index: 1;
-    background: var(--color-secundario);
+    background: var(--color-secundario-binance);
 }
 .circle__text1 {
     padding: px;
     font-family: "SF-Pro-Text-Bold";
     font-size: 1.8em;
-    color: var(--color-ternario);
+    color: var(--color-primario-binance);
 
 }
 .circle__text2 {
@@ -53,14 +59,14 @@ body{
     display: flex;
     flex-direction: row;
     font-size: 1.8em;
-    color: var(--color-ternario);
+    color: var(--color-primario-binance);
 }
 .circle__text3 {
     font-family: "SF-Pro-Text-Bold";
     display: flex;
     flex-direction: row;
     font-size: 1.8em;
-    color: var(--color-ternario);
+    color: var(--color-primario-binance);
 }
 .buttons {
     width: 100%;
@@ -71,8 +77,8 @@ body{
     justify-content: space-around;
 }
 .buttons__button1 {
-        background-color: var(--color-primario);
-        color:  var(--color-ternario);
+        background-color: var(--color-secundario-binance);
+        color:  var(--color-primario-binance);
         border: 2px solid var(--color-primario);
         font-weight: 400;
         text-transform: capitalize;
@@ -89,9 +95,9 @@ body{
 }
 
 .buttons__button2 {
-    background-color: var(--color-ternario);
-    border: 2px solid var(--color-secundario);
-    color: var(--color-secundario);
+    background-color: var(--color-primario-binance);
+    border: 2px solid var(--color-secundario-binance);
+    color: var(--color-secundario-binance);
     text-transform: capitalize;
     font-weight: 400;
     position: relative;
@@ -106,9 +112,9 @@ body{
     opacity: 1;
 }
 .buttons__button3 {
-    background-color: var(--color-ternario);
-    border: 2px solid var(--color-cuarto);
-    color: var(--color-cuarto);
+    background-color: var(--color-secundario-binance);
+    color:  var(--color-primario-binance);
+    border: 2px solid var(--color-primario);
     text-transform: capitalize;
     font-weight: 400;
     position: relative;
@@ -148,8 +154,11 @@ body{
     padding: 0px 20px;
 }
 .image__imagen1 {
-    height: 150px;
-    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 .days__imagen1 {
@@ -163,7 +172,7 @@ body{
     gap:   10px;
     flex-direction: row;
     align-items: center;
-    background: #E1FFEF;
+    background: var(--color-primario-binance);
     justify-content: space-between;
 }
 
@@ -193,11 +202,11 @@ body{
     font-weight: 700;
     font-family: "SF-Pro-Text-Bold";
     font-size: 1.3em;
-    color: var(--color-primario)
+    color: var(--color-secundario-binance)
 }
 .text__text {
     font-family: "SF-Pro-Text-Regular";
-    color: var(--color-cuarto);
+    color: var(--color-secundario-binance);
     font-weight: 700;
 }
 .close-icon {
@@ -215,11 +224,10 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    overflow-y: scroll;
     position: sticky;
     z-index: 2;
     top: 0;
-    background: var(--color-primario);
+    background:var(--color-primario-binance);
 }
 
 .header__logo {
@@ -230,28 +238,25 @@ body{
 
 }
 .logo__icono img {
-    width: 3em;
+    width: 2.3em;
 }
 
 .logo__titulo {
     /* background: orange; */
-    color: var(--color-ternario);
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--color-secundario-binance);
     font-family: "SF-Pro-Text-Bold";
     text-transform: uppercase;
 }
 
-.header__menu {
-    /* background: darkblue; */
-}
-
-.header__menu i {
+.header__menu img {
     font-size: 3em;
-    color: var(--color-ternario);
+    color: var(--color-secundario-binance);
 }
-
 .footer {
     width: 100%;
-    background: var(--color-primario);
+    background: var(--color-primario-binance);
     position: fixed;
     bottom: 0;
     z-index: 10;
@@ -268,5 +273,5 @@ body{
 }
 
 .footer ul li a img {
-    width: 2em;
+    width: 2.5em;
 }
